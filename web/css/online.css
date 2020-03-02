@@ -1,0 +1,440 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: rgb(252 252 252);
+}
+
+
+/*顶部*/
+
+.head {
+	width: 100%;
+	height: 80px;
+	background-color: #F0F8FF;
+}
+
+.top {
+	width: 1100px;
+	height: 82px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	width: 200px;
+	height: 70px;
+	margin-top: 5px;
+}
+
+.daohang1 {
+	float: right;
+}
+
+.daohang1 p {
+	font-size: 25px;
+	font-family: 宋体;
+	color: #337ab7;
+	margin-top: 22px;
+}
+
+
+/*主要内容*/
+
+.main {
+	width: 1000px;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.part2 .other {
+	font-size: 12px;
+	color: grey;
+}
+
+.part2 .pic1 {
+	width: 34px;
+	height: 34px;
+	margin-left: 0px;
+	margin-top: 12px;
+}
+
+.part2 .pic2 {
+	margin-left: 16px;
+	margin-top: 12px;
+}
+
+.denglu {
+	border: 1px solid rgb(204 204 204);
+	width: 346px;
+	height: 406px;
+	float: right;
+	border-radius: 18px;
+	margin-top: 96px;
+	/*background-color: rgba(240, 248, 255, 0.8);*/
+}
+
+.denglu ul {
+	list-style: none;
+	width: 100%;
+	height: 56px;
+	background-color: lightgrey;
+	border-radius: 18px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.denglu ul li {
+	float: left;
+	text-align: center;
+	width: 172px;
+	font-size: 30px;
+	display: block;
+}
+
+.li-1 {
+	border-top-right-radius: 0;
+}
+
+.li-1:hover {
+	background-color: #6CA6CD;
+	border-radius: 18px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	border-top-right-radius: 0px;
+}
+
+.li-2 {
+	border-top-left-radius: 0;
+	border-right: 0px;
+	width: 172px;
+}
+
+.li-2:hover {
+	background-color: #6CA6CD;
+	border-radius: 18px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	border-top-left-radius: 0px;
+}
+
+.denglu ul li button {
+	height: 56px;
+	background-color: transparent;
+	border: none;
+	font-size: 21px;
+	width: 138px;
+}
+
+
+/*登陆栏部分*/
+
+.enter {
+	width: 346px;
+	height: 320px;
+}
+
+.enter1 {
+	width: 252px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.enter1 input {
+	width: 210px;
+	height: 26px;
+	float: right;
+	margin-top: 15px;
+}
+
+.more {
+	width: 252px;
+	height: 23px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.on {
+	width: 252px;
+	height: 30px;
+	font-size: 16px;
+	border-radius: 7px;
+	margin-top: 4px;
+	margin-bottom: 6px;
+	background-color: #6CA6CD;
+	color: white;
+	border: 0px;
+}
+
+.on:hover {
+	width: 254px;
+	height: 32px;
+}
+
+.part {
+	margin-right: auto;
+	margin-left: auto;
+	width: 252px;
+	margin-top: 4px;
+}
+
+.left {
+	float: left;
+	width: 575px;
+	height: 550px;
+}
+
+.left .bg {
+	width: 527px;
+	height: 431px;
+	margin-top: 100px;
+	position: absolute;
+}
+
+.hide {
+	display: none;
+}
+
+.c1 {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 2;
+}
+
+.c2 {
+	background-color: white;
+	position: fixed;
+	width: 360px;
+	height: 354px;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	margin-top: -150px;
+	margin-left: -200px;
+	border-radius: 30px;
+}
+
+.part2 {
+	width: 207px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+
+/*登陆栏部分*/
+
+#enter2 {
+	display: none;
+}
+
+
+/*身份按钮*/
+
+.denglu>ul>li>button:focus {
+	background-color: #6CA6CD;
+	border-radius: 18px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	width: 172px;
+}
+
+.denglu .stud:focus {
+	border-top-right-radius: 0;
+}
+
+.denglu .teac:focus {
+	border-top-left-radius: 0;
+}
+
+.cheek1 {
+	position: relative;
+	top: -8px;
+	height: 24px;
+	width: 150px;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+
+/*学生部分*/
+
+.enter1 .man1 {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-top: 9px;
+}
+
+.enter1 .lock1 {
+	width: 34px;
+	height: 32px;
+	margin-top: 13px;
+	float: left;
+}
+
+
+/*.enter .mima1 {
+	margin-left: 40px;
+	margin-top: 14px;
+	position: relative;
+	top: -28px;
+}*/
+
+.enter1 .more .rem {
+	width: 80px;
+	height: 23px;
+	float: left;
+	margin-left: 42px;
+}
+
+.enter1 .more .rem a {
+	display: inline-block;
+}
+
+.enter1 .more .for {
+	width: 66px;
+	height: 23px;
+	float: right;
+}
+
+.enter1 .remember1 {
+	width: 12px;
+	float: left;
+	margin-top: -2px;
+	/*margin-top: 5px;
+	margin-left: 6px;*/
+}
+
+.enter1 .more .remem1 {
+	font-size: 13px;
+	/*position: relative;
+	top: -8px;
+	left: -3px;*/
+	color: grey;
+}
+
+.enter1 .more .forget1 {
+	text-decoration: none;
+	/*float: right;
+	margin-top: 9px;*/
+	font-size: 13px;
+	color: gray;
+	/*margin-right: -6px;*/
+}
+
+
+/*管理员部分*/
+
+.enter2 .man2 {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	top: 35px;
+}
+
+.enter2 .lock2 {
+	width: 34px;
+	height: 32px;
+	position: relative;
+	top: 19px;
+}
+
+.enter2 .remember2 {
+	width: 12px;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+
+.enter2 .more .remem2 {
+	font-size: 13px;
+	position: relative;
+	top: -8px;
+	left: -3px;
+	color: grey;
+}
+
+.enter2 .more .forget2 {
+	text-decoration: none;
+	float: right;
+	margin-top: 9px;
+	font-size: 13px;
+	color: gray;
+	margin-right: -6px;
+}
+
+.pic3 {
+	width: 34px;
+	height: 34px;
+	margin-left: 4px;
+	margin-top: 12px;
+}
+
+.pic4 {
+	margin-left: 36px;
+	margin-top: 12px;
+}
+
+.pic5 {
+	margin-left: 30px;
+	margin-top: 12px;
+}
+
+.enter button a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/*验证码*/
+
+.yanzheng {
+	width: 252px;
+	height: 50px;
+	display: flex;
+}
+
+.yanzheng .shuru {
+	order: -1;
+	width: 114px;
+	height: 50px;
+}
+
+.shuru input {
+	width: 72px;
+}
+
+.yanzheng .xianshi {
+	order: 0;
+	border: 1px solid #555;
+	width: 64px;
+	height: 27px;
+	margin-top: 14px;
+	margin-left: 8px;
+}
+
+.yanzheng .refresh {
+	order: 1;
+	width: 70px;
+	height: 24px;
+	margin-top: 17px;
+}
+
+.refresh a {
+	text-decoration: none;
+	font-size: 13px;
+}

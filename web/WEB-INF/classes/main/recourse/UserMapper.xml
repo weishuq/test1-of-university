@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<!--连接mapper接口-->
+<mapper namespace="main.cn.hengzhi.mapper.AllMapper">
+
+    <!--    <resultMap id="UserMap" type="entity.User">-->
+    <!--        <id column="id" property="id" jdbcType="INT"/>-->
+    <!--        <result column="username" property="username" jdbcType="VARCHAR"/>-->
+    <!--        <result column="password" property="password" jdbcType="VARCHAR"/>-->
+    <!--        <result column="phonenumber" property="phonenumber" jdbcType="VARCHAR"/>-->
+    <!--    </resultMap>-->
+
+
+    <!--用户登录-->
+    <select id="userLogin" parameterType="User" resultType="User">
+        select userName from tb_user where userName = #{userName} and userPassword=#{userPassword}
+    </select>
+    <!--管理员登录-->
+    <select id="managerLogin" parameterType="Manager" resultType="String">
+        select  managerEmail from tb_manager where managerName=#{managerName} and managerPassword=#{managerPassword}
+    </select>
+    <!--用户注册-->
+    <insert id="insertUser" parameterType="User" >
+        insert into tb_user(userName, userPassword, phoneNumber,userSex) values (#{userName},#{userPassword},#{phoneNumber},#{userSex})
+    </insert>
+    <!--用户名查重-->
+    <select id="checkUser" resultType="User" parameterType="String">
+        select * from tb_user where userName = #{userName}
+    </select>
+    <!--修改用户信息-->
+    <update id="updateUser" parameterType="User">
+        update tb_user
+        set
+        userName=#{userName},phoneNumber=#{phoneNumber},age=#{age},address=#{address}
+        where userId=#{userId}
+    </update>
+    <!--新闻模糊查询-->
+    <select id="searchNews" resultType="News" parameterType="String">
+        <bind name="search" value="'%' + _word + '%'"/>
+        select * from tb_news where title LIKE  #{search}
+    </select>
+    <!--新闻删除-->
+    <delete id="deleteNews" parameterType="Integer">
+        delete from
+        tb_news where newsId=#{newsId}
+    </delete>
+    <!--根据id查找新闻-->
+    <select id="findNewsById" parameterType="Integer" resultType="News">
+        select * from tb_news where newsId = #{newsId}
+    </select>
+<!--查找所有新闻-->
+    <select id="findAllNews" resultType="News" >
+		select * from tb_news;
+	</select>
+<!--新闻分页-->
+    <select id="findLimitNews" resultType="News" parameterType="Integer" >
+        select * from tb_news
+        limit #{currentPageNo},#{pageSize}
+    </select>
+    <!--新闻修改-->
+    <update id="updateNews" parameterType="News">
+        update tb_news
+        set
+        title=#{title},author=#{author},content=#{content},writeTime=#{writeTime}
+        where newsId=#{newsId}
+    </update>
+    <!--新闻添加-->
+    <insert id="addNews" parameterType="News" >
+        insert into tb_news(title,author, content,writeTime) values (#{title},#{author},#{content},#{writeTime})
+    </insert>
+    <!--根据类型查新闻-->
+    <select id="findNewsByType" resultType="News" parameterType="Integer">
+        select * from tb_news where sortId = #{sortId};
+    </select>
+    <!--添加新闻类型-->
+    <insert id="addNewsType" parameterType="NewsType" >
+        insert into tb_type(sortId,sortName) values (#{sortId},#{sortName})
+    </insert>
+    <!--修改新闻类型-->
+    <update id="updateNewsType" parameterType="NewsType">
+        update tb_type
+        set
+        sortName=#{sortName}
+        where sortId=#{sortId}
+    </update>
+    <!--新闻类型删除-->
+    <delete id="deleteNewsType" parameterType="Integer">
+        delete from
+        tb_type where sortId=#{sortId}
+    </delete>
+
+
+
+
+
+
+    <select id="AllNews" resultType="News" parameterType="News" >
+		select * from tb_news;
+	</select>
+
+    <select id="AllUser" resultType="String" parameterType="String">
+        select userName from tb_user
+    </select>
+    <!--删除ok-->
+    <delete id="deleteUser" parameterType="Integer">
+        delete from tb_user where userId =#{userId}
+    </delete>
+    <!--分页-->
+    <select id="findUser" resultType="User" parameterType="Integer" >
+        select * from tb_user
+        <!-- <if test="name !=null or name !='' " > where name like #{name} </if> -->
+        limit #{start},#{count}
+    </select>
+
+    <select id="findAllUser" resultType="User" >
+		select * from tb_user;
+	</select>
+
+</mapper>

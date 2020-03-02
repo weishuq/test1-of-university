@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>registe</title>
+		<link rel="stylesheet" href="css/registe.css" type="text/css">
+		<script src="js/register.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	</head>
+
+	<body>
+		<div class="main">
+			<p class="user">用户注册</p>
+			<table>
+				<tr>
+					<td class="short">
+						<font color="red">*</font>
+						<span>用户名:</span>
+					</td>
+					<td><input type="text" class="form-control" placeholder="请输入用户名 长度6-12个字符" style="width: 220px;"></td>
+				</tr>
+				<tr>
+					<td>
+						<font color="red">*</font>
+						<span>密码:</span>
+					</td>
+					<td><input type="password" class="form-control" id="inputPassword" placeholder="请输入密码 长度6-12个字符">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font color="red">*</font>
+						<span>确认密码:</span>
+					</td>
+					<td><input type="password" class="form-control" id="inputPassword" placeholder="请重复输入密码"></td>
+				</tr>
+				<tr>
+					<td>
+						<font color="red">*</font>
+						<span>邮箱地址:</span>
+					</td>
+					<td><input type="text" class="form-control" placeholder="请输入正确的邮箱地址"></td>
+				</tr>
+				<tr>
+					<td>
+						<font color="red">*</font>
+						<span>性别:</span>
+					</td>
+					<td>
+						<input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>男
+						<input class="woman" type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked style="margin-left: 34px;">女
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font color="red">*</font>
+						<span>验证码:</span>
+					</td>
+					<td>
+						<input type="text" class="form-control" id="yanzheng" placeholder="输入验证码" style="width:90px;float: left;">
+						<!--<button id="code" οnclick="createnew()"></button>-->
+						<div id="characters"></div>
+						<a id="refresh" href="">看不清楚？</a>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<button type="button" class="btn btn-primary" onclick="submit1(this)">注册</button>
+						<button type="button" class="btn btn-primary" onclick="reset1(this)" style="margin-left: 35px;">重置</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+
+</html>

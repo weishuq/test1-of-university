@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>online</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/online.css" type="text/css">
+		<script src="js/online.js" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+		<div class="main">
+			<!--顶部分类导航-->
+			<div class="denglu">
+				<ul>
+					<li class="li-1">
+						<button onclick="show1()" class="stud">学 生</button>
+					</li>
+					<li class="li-2">
+						<button onclick="show2()" class="teac">管 理 员</button>
+					</li>
+				</ul>
+				<!--下方登陆栏-->
+				<div class="enter">
+					<!--学生登陆栏-->
+					<div class="enter1" id="enter1">
+						<form class="loginForm" onsubmit="return false;">
+							<img src="img/man.png" class="man1">
+							<input type="text" placeholder="账号/学号/手机号" class="form-control" id="username">
+							<br/>
+							<img src="img/locking.png" class="lock1">
+							<input type="password" placeholder="请输入密码" class="form-control" id="mima1">
+							<!--验证码-->
+							<div class="yanzheng">
+								<div class="shuru">
+									<img src="img/safety.png" class="yanz1">
+									<input type="text" placeholder="验证码" class="form-control">
+								</div>
+								<div class="xianshi"></div>
+								<div class="refresh">
+									<a href="">看不清楚？</a>
+								</div>
+							</div>
+							<div class="more">
+								<div class="rem">
+									<input type="checkbox" class="remember1">
+									<a class="remem1">记住密码</a>
+								</div>
+								<!--<div class="for">
+									<a href="how2j.cn" class="forget1">忘记密码？</a>
+								</div>-->
+							</div>
+							<button  type="submit" class="btn btn-primary" onclick="submit1();">登陆</button>
+							<button class="btn btn-primary">
+								<a href="registe.html">注册</a>
+							</button>
+						</form>
+						<!--下方外部链接-->
+						<div class="part">
+							<a style="font-size: 12px;color: grey;text-decoration: none;">------------------ 使用合作账户登陆 ------------------</a>
+							<img src="img/qq.png" class="pic3">
+							<img src="img/weixin.png" class="pic4">
+							<img src="img/douban.png" class="pic4">
+							<img src="img/weibo.png" class="pic5">
+						</div>
+					</div>
+					<!--管理员登陆栏-->
+					<div class="enter1" id="enter2">
+						<form class="loginForm" onsubmit="return false;">
+							<img src="img/man.png" class="man1">
+							<input type="text" placeholder="管理员ID/手机号" class="form-control" id="username">
+							<br/>
+							<img src="img/lock.png" class="lock1">
+							<input type="password" placeholder="请输入密码" class="form-control" id="mima1">
+							<!--验证码-->
+							<div class="yanzheng">
+								<div class="shuru">
+									<!--<span>验证：</span>-->
+									<input type="text" placeholder="验证码" class="form-control">
+								</div>
+								<div class="xianshi"></div>
+								<div class="refresh">
+									<a href="">看不清楚？</a>
+								</div>
+							</div>
+							<div class="more">
+								<div class="rem">
+									<input type="checkbox" class="remember1">
+									<a class="remem1">记住密码</a>
+								</div>
+								<div class="for">
+									<a href="how2j.cn" class="forget1">忘记密码？</a>
+								</div>
+							</div>
+							<button  type="submit" class="on" onclick="submit1();">登陆</button>
+							<button class="on">
+								<a href="registe.html">注册</a>
+							</button>
+						</form>
+						<!--下方外部链接-->
+						<div class="part">
+							<a style="font-size: 12px;color: grey;">------------------ 使用合作账户登陆 ------------------</a>
+							<img src="img/qq.png" class="pic3">
+							<img src="img/weixin.png" class="pic4">
+							<img src="img/douban.png" class="pic4">
+							<img src="img/weibo.png" class="pic5">
+						</div>
+						<!--<form class="loginForm">
+							<img src="img/man.png" class="man2">
+							<input type="text" placeholder=" 管理员帐号/手机号"  class="form-control" class="username"><br/>
+							<img src="img/lock.png" class="lock2">
+							<input type="password" class="mima1"  class="form-control" placeholder="密码">
+							<div class="more" style="margin-top: -24px;">
+								<input type="checkbox" class="remember2">
+								<a class="remem2">记住密码</a>
+								<a href="how2j.cn" class="forget2">忘记密码？</a>
+							</div>
+							<button class="on" onclick="submit(this)" style="margin-bottom: 6px;">登陆</button>
+							<button class="on">
+								<a href="registe.html">注册</a>
+							</button>
+						</form>
+						<!--下方外部链接-->
+						<!--<div class="part">
+							<a style="font-size: 12px;color: grey;">-------------- 使用合作账户登陆 --------------</a>
+							<img src="img/qq.png" class="pic3">
+							<img src="img/weixin.png" class="pic4">
+							<img src="img/douban.png" class="pic4">
+							<img src="img/weibo.png" class="pic5">
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

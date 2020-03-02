@@ -1,0 +1,470 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-image: url(../image/adminPage/bgc.jpg);
+}
+
+
+/*顶部*/
+
+.head {
+	width: 1100px;
+	height: 88px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	/*background-color: rgba(255,255,255,0.6);*/
+	border: 1px solid rgb(214 214 214);
+	margin-top: 50px;
+}
+
+
+/*logo部分*/
+
+.logo {
+	width: 400px;
+	height: 87px;
+	float: left;
+}
+
+.logo img {
+	width: 146px;
+	height: 83px;
+	margin-left: 10px;
+}
+
+
+/*信息及退出*/
+
+.correlation {
+	width: 106px;
+	height: 50px;
+	float: right;
+	margin-top: 30px;
+}
+
+.correlation a:hover {
+	-webkit-filter: sepia(100%);
+}
+
+.quit img {
+	width: 27px;
+	height: 27px;
+	margin-top: 1px;
+}
+
+.message img {
+	width: 30px;
+	height: 20px;
+	margin-top: 5px;
+}
+
+.message {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.quit {
+	width: 49px;
+	height: 50px;
+	float: right;
+}
+
+
+/*.quit a {
+	font-size: 15px;
+	text-decoration: none;
+	color: #5e5e5e;	width: 30px;
+	height: 21px;margin-left: 3px;
+}*/
+
+
+/*中间部分*/
+
+.main {
+	width: 1100px;
+	height: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid rgb(214 214 214);
+	border-top: 0;
+}
+
+.personal {
+	width: 250px;
+	height: 800px;
+	border-right: 1px solid rgb(214 214 214);
+	background-color: rgba(39, 39, 39, 0.6);
+	float: left;
+}
+
+.top {
+	width: 250px;
+	height: 118px;
+	border-bottom: 1px solid rgb(214 214 214);
+}
+
+.photo {
+	width: 78px;
+	height: 78px;
+	float: left;
+	margin-top: 14px;
+	margin-left: 18px;
+	border: 1px solid rgb(214 214 214);
+}
+
+.photo img {
+	width: 78px;
+	height: 78px;
+}
+
+.other {
+	width: 150px;
+	height: 80px;
+	float: right;
+	margin-top: 17px;
+}
+
+.username {
+	text-align: center;
+	height: 28px;
+}
+
+.username a {
+	color: #f2f2f2;
+	font-size: 25px;
+}
+
+.username a :hover {
+	color: #286090;
+	text-decoration: none;
+}
+
+.change {
+	width: 150px;
+	height: 50px;
+}
+
+.change button {
+	margin-top: 11px;
+	margin-left: 30px;
+	/*background-color: #d0d0d0;
+	border-color: #fff;
+	color: #6f6f6f;*/
+}
+
+.menu {
+	width: 250px;
+	height: 300px;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu>ul>li {
+	height: 60px;
+}
+
+.menu button {
+	border: 0;
+	width: 250px;
+	height: 60px;
+	font-size: 20px;
+	background-color: transparent;
+	color: #cfcfcf;
+	font-weight: 396;
+}
+
+.menu button:hover {
+	background-color: rgba(13, 13, 13, 0.2);
+	color: white;
+	border-left: 2px solid yellow;
+	transition: 0.3s;
+}
+
+.menu button:focus {
+	background-color: rgba(13, 13, 13, 0.2);
+	color: white;
+	border-left: 2px solid yellow;
+}
+
+.operate {
+	width: 847px;
+	height: 800px;
+	float: right;
+	background-color: rgba(221, 221, 221, 0.6);
+}
+
+.search {
+	width: 847px;
+	height: 50px;
+	margin-top: 16px;
+}
+
+#news .search .outline {
+	width: 122px;
+	height: 30px;
+	border: 1px solid #aca8a8;
+	border-radius: 13px;
+	display: inline-block;
+	background-color: #f4f4f4;
+}
+
+#news .search>form>input {
+	width: 50px;
+	height: 27px;
+	border-radius: 5px;
+	background-color: #397db9;
+	border: 0px;
+	color: #efefef;
+}
+
+#news .search #keyWord {
+	width: 137px;
+	height: 28px;
+	border: 0px;
+	margin-left: 9px;
+	background-color: transparent;
+}
+
+#news .chuan1 {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 26px;
+}
+
+#news .chuan1 table {
+	width: 700px;
+	border-collapse: collapse;
+}
+
+#news .chuan1 table,
+th,
+td {
+	border: 1px solid #337ab7;
+}
+
+#news .chuan1 th,
+td {
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.search #myInput {
+	background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+	background-position: 10px 8px;
+	background-repeat: no-repeat;
+	width: 185px;
+	font-size: 15px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	height: 36px;
+	border-radius: 17px;
+}
+
+.search>form {
+	width: 200px;
+	height: 38px;
+	display: inline-block;
+	margin-left: 21px;
+}
+
+.search button {
+	border-radius: 10px;
+	background-color: #337ab7;
+	border: 0px;
+	color: #f0f0f0;
+}
+
+.search button:hover {
+	color: white;
+}
+
+.search .plus {
+	width: 75px;
+	height: 35px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.search .dele {
+	width: 75px;
+	height: 35px;
+	text-align: center;
+	margin-left: 435px;
+}
+
+#news {
+	display: block;
+}
+
+#fabu {
+	display: inline-block;
+	width: 75px;
+	height: 35px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+#fb {
+	visibility: hidden;
+}
+
+#fb2 {
+	visibility: hidden;
+}
+
+#fabu2 {
+	display: inline-block;
+	width: 75px;
+	height: 35px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.close {
+	width: 33px;
+	border-radius: 3px!important;
+}
+
+#announce {
+	display: none;
+}
+
+#staff {
+	display: none;
+}
+
+#bar {
+	display: none;
+	background-color: white;
+	height: 798px;
+}
+
+#bar .table {
+	width: 44%;
+	max-width: 100%;
+	margin-bottom: 20px;
+	display: inline-table;
+	margin-left: 36px;
+	color: #337ab7;
+}
+
+#myInformation {
+	display: none;
+}
+
+#myInformation form {
+	width: 340px;
+	height: 600px;
+	margin: 50px auto;
+}
+
+#myInformation form label {
+	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 16px;
+	color: rgb(92, 92, 92);
+}
+
+#myInformation #inputfile {
+	height: 32px;
+}
+
+#myInformation .form-control {
+	display: inline-block;
+	width: 180px;
+}
+
+#myInformation form #area {
+	width: 254px!important;
+	height: 146px;
+}
+
+#staff button {
+	border: 0px;
+	background-color: transparent;
+	width: 24px;
+	height: 14px;
+}
+
+#staff button:hover {
+	color: #337ab7;
+}
+
+#staff .shortLine {
+	width: 305px;
+}
+
+#staff>table>thead>tr {
+	background-color: #ffffe7;
+}
+
+#staff th {
+	text-align: center;
+}
+
+#staff td {
+	text-align: center;
+}
+
+.c1 {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 2;
+}
+
+.c2 {
+	background-color: white;
+	position: fixed;
+	width: 600px;
+	height: 650px;
+	top: 30%;
+	left: 50%;
+	z-index: 3;
+	margin-top: -180px;
+	margin-left: -200px;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.c2 .form-control {
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.c2 form span {
+	margin-left: 25px;
+	font-size: 16px;
+}
+
+.c2 h4 {
+	margin-left: 23px;
+	font-size: 19px;
+	display: block;
+	padding-top: 3px;
+}
+
+.c2 .line {
+	width: 100%;
+	height: 1px;
+	background-color: rgb(229 229 229);
+	margin-top: 10px;
+}
+
+.c2 form {
+	margin-top: 16px;
+}

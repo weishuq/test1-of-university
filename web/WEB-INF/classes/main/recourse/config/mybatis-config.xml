@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <properties resource="main/recourse/config/mysql.properties">
+        <property name="driver" value="com.mysql.jdbc.Driver" />
+        <property name="username" value="root"/>
+        <property name="password" value="4104214516shb"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/school?serverTimezone=UTC&amp;useSSL=false&amp;characterEncoding=UTF-8"/>
+    </properties>
+
+    <typeAliases>
+       <typeAlias alias="User" type="main.cn.hengzhi.javaBean.User" />
+        <typeAlias alias="News" type="main.cn.hengzhi.javaBean.News" />
+        <typeAlias alias="Manager" type="main.cn.hengzhi.javaBean.Manager"/>
+        <typeAlias alias="NewsType" type="main.cn.hengzhi.javaBean.NewsType"/>
+        <typeAlias alias="Integer" type="java.lang.Integer"/>
+        <typeAlias alias="String" type="java.lang.String"/>
+        <typeAlias alias="ArrayList" type="java.util.ArrayList"/>
+        <typeAlias alias="List" type="java.util.List"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}" />
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="main/recourse/UserMapper.xml" />
+    </mappers>
+</configuration>

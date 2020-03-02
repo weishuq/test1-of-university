@@ -1,0 +1,79 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url(../image/userRegister/bgc.jpg)!important;
+}
+
+.main {
+	width: 576px;
+	height: 630px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 122px;
+	background-color: rgba(255,255,255,0.4);
+	border: 2px solid #ccc;
+	border-radius: 11px;
+}
+
+.main .user {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 宋体;
+	margin-top: 35px;
+}
+
+.main table {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 32px;
+}
+
+table tr {
+	height: 58px;
+}
+
+table .short {
+	width: 116px;
+}
+
+table span {
+	font-size: 20px;
+	font-family: 宋体;
+}
+
+#code {
+	width: 80px;
+	height: 30px;
+	background: white;
+	text-align: center;
+	line-height: 30px;
+	color:#337ab7;
+	text-decoration: none;
+	letter-spacing: 7px;
+	padding-left: 7px;
+	vertical-align: middle;
+	font-weight: bold;
+	margin-left: 4px;
+	/*margin-top: 4px;*/
+}
+
+#characters{
+	width: 100px;
+	height: 30px;
+	border:1px solid #555;
+	margin-left: 70px;
+}
+#refresh{
+	width:60px;
+	height:20px;
+	float:right;
+	font-size:10px;
+	margin-right: -16px;
+	margin-top: -21px;
+}
+
+
